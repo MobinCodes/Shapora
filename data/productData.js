@@ -299,3 +299,39 @@ export const Deals = [
         dealEnd: "2026-11-27"
     },
 ];
+
+export const fashionProducts = [
+    { id: 1, title: "Classic Golden Women Necklace", price: 180, offer: 150, image: "/products/necklace1.webp", hoverImage: "/products/necklace2.webp", rating: 4.3, brand: "ZARA" },
+    { id: 2, title: "Premium Bridal Gold Earrings", price: 220, image: "/products/earings1.webp", hoverImage: "/products/earings2.webp", rating: 4.7, brand: "Tiffany & Co." },
+    { id: 3, title: "Elegant Engagement Ring", price: 240, offer: 210, image: "/products/ring1.webp", hoverImage: "/products/ring2.webp", rating: 4.8, brand: "Tiffany & Co." },
+    { id: 4, title: "Luxury Fashion Gold Ring", price: 199, image: "/products/ring1.webp", hoverImage: "/products/ring2.webp", rating: 4.1, brand: "Gucci" },
+    { id: 5, title: "Daily Wear Necklace Set", price: 130, offer: 115, image: "/products/necklace1.webp", hoverImage: "/products/necklace2.webp", rating: 3.9, brand: "ZARA" },
+    { id: 6, title: "Golden Pearl Earrings", price: 160, image: "/products/earings1.webp", hoverImage: "/products/earings2.webp", rating: 4.5, brand: "Dior" },
+    { id: 7, title: "Women Stylish Necklace", price: 175, image: "/products/necklace1.webp", hoverImage: "/products/necklace2.webp", rating: 4.0, brand: "H&M" },
+    { id: 8, title: "Minimal Design Ring", price: 110, image: "/products/ring1.webp", hoverImage: "/products/ring2.webp", rating: 3.8, brand: "ZARA" },
+    { id: 9, title: "Wedding Gold Earrings Collection", price: 260, offer: 230, image: "/products/earings1.webp", hoverImage: "/products/earings2.webp", rating: 4.9, brand: "Tiffany & Co." },
+];
+
+export const furnitureProducts = [
+    { id: 10, title: "Modern Wood Night Lamp", price: 220, offer: 190, image: "/products/lamp1.webp", hoverImage: "/products/lamp2.webp", rating: 4.2, brand: "IKEA" },
+    { id: 11, title: "Ergonomic Office Chair", price: 130, image: "/products/chair1.webp", hoverImage: "/products/chair2.webp", rating: 4.6, brand: "IKEA" },
+    { id: 12, title: "Modern Wall Clock", price: 95, image: "/products/clock1.webp", hoverImage: "/products/clock2.webp", rating: 4.1, brand: "Casio Home" },
+    { id: 13, title: "Premium LED Desk Lamp", price: 250, image: "/products/lamp1.webp", hoverImage: "/products/lamp2.webp", rating: 4.7, brand: "Philips" },
+    { id: 14, title: "Home Office Chair Set", price: 145, offer: 120, image: "/products/chair1.webp", hoverImage: "/products/chair2.webp", rating: 4.3, brand: "IKEA" },
+    { id: 15, title: "Wooden Vintage Clock", price: 115, image: "/products/clock1.webp", hoverImage: "/products/clock2.webp", rating: 3.9, brand: "Sony Home" },
+    { id: 16, title: "Smart Motion Lamp", price: 180, image: "/products/lamp1.webp", hoverImage: "/products/lamp2.webp", rating: 4.0, brand: "Xiaomi" },
+    { id: 17, title: "Comfortable Relax Chair", price: 170, image: "/products/chair1.webp", hoverImage: "/products/chair2.webp", rating: 4.5, brand: "IKEA" },
+    { id: 18, title: "Luxury Wall Clock Decor", price: 140, image: "/products/clock1.webp", hoverImage: "/products/clock2.webp", rating: 4.4, brand: "Rolex Home" },
+];
+
+export const electronicsProducts = [
+    { id: 19, title: "Sony Wireless Portable Camera", price: 320, offer: 280, image: "/products/camera1.webp", hoverImage: "/products/camera2.webp", rating: 4.6, brand: "Sony" },
+    { id: 20, title: "Smart Digital Watch", price: 140, image: "/products/watch1.webp", hoverImage: "/products/watch2.webp", rating: 4.2, brand: "Casio" },
+    { id: 21, title: "Business Travel Laptop Backpack", price: 260, image: "/products/backpack1.webp", hoverImage: "/products/backpack2.webp", rating: 4.7, brand: "HP" },
+    { id: 22, title: "Ultra HD Compact Camera", price: 360, image: "/products/camera1.webp", hoverImage: "/products/camera2.webp", rating: 4.4, brand: "Sony" },
+    { id: 23, title: "Pro Fitness Digital Watch", price: 165, offer: 150, image: "/products/watch1.webp", hoverImage: "/products/watch2.webp", rating: 4.1, brand: "Xiaomi" },
+    { id: 24, title: "Tech Laptop Backpack", price: 230, image: "/products/backpack1.webp", hoverImage: "/products/backpack2.webp", rating: 4.3, brand: "Samsonite" },
+    { id: 25, title: "Vloggers Compact Camera", price: 310, image: "/products/camera1.webp", hoverImage: "/products/camera2.webp", rating: 4.0, brand: "Canon" },
+    { id: 26, title: "Men’s Smart Analog Watch", price: 120, image: "/products/watch1.webp", hoverImage: "/products/watch2.webp", rating: 3.9, brand: "Casio" },
+    { id: 27, title: "Waterproof Travel Backpack", price: 280, offer: 250, image: "/products/backpack1.webp", hoverImage: "/products/backpack2.webp", rating: 4.8, brand: "HP" },
+];

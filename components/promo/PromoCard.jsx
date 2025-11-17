@@ -5,7 +5,7 @@ export default function PromoCard({ title, subtitle, price, image, bgColor, data
 
     const styles = {
         1: {
-            wrapper: "p-8 xl:h-[350px] h-[250px]",
+            wrapper: "p-8 xl:h-[350px] h-[200px]",
             title: "text-2xl sm:text-3xl xl:text-5xl",
             subtitle: "text-2xl xl:text-3xl",
             price: "text-lg xl:text-xl",

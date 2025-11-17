@@ -1,14 +1,15 @@
 import FreeShipping from "@/components/freeShipping/FreeShipping";
 import Hero from "@/components/home/Hero/Hero";
 import ProductSliderWrapper from "@/components/productSlider/productSliderWrapper";
+import ProductSliderWrapperColumn from "@/components/productSlider/ProductSliderWrapperColumn";
 import PromoContainer from "@/components/promo/PromoContainer.jsx";
 import StoreFeatures from "@/components/storeFeatures/StoreFeatures";
-import { categories, Deals, DUMMY_PROMO_DATA1, DUMMY_PROMO_DATA2, DUMMY_PROMO_DATA3, featuredProducts, latestProducts } from "@/data/productData";
+import { categories, Deals, DUMMY_PROMO_DATA1, DUMMY_PROMO_DATA2, DUMMY_PROMO_DATA3, electronicsProducts, fashionProducts, featuredProducts, furnitureProducts, latestProducts } from "@/data/productData";
 
 export default function HomePage() {
   return (
     <>
-      <main className="flex flex-col gap-y-8 items-center min-h-[10000px] px-5 ">
+      <main className="flex flex-col gap-y-8 items-center min-h-[10000px] px-3.5 sm:px-5">
 
         <Hero />
         <StoreFeatures />
@@ -20,6 +21,13 @@ export default function HomePage() {
         <ProductSliderWrapper title="Deal Of The Day" data={Deals} />
         <FreeShipping />
         <PromoContainer data={DUMMY_PROMO_DATA3} />
+        <ProductSliderWrapperColumn
+          columns={[
+            { title: "Fashion", data: fashionProducts },
+            { title: "Furniture", data: furnitureProducts },
+            { title: "Electronics", data: electronicsProducts },
+          ]}
+        />
       </main>
     </>
   );
