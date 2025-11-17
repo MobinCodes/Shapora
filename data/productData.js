@@ -4,7 +4,7 @@ export const latestProducts = [
     { id: 3, title: "Engagement Sterling Gold Style Ring", price: 120, image: "/products/ring1.webp", hoverImage: "/products/ring2.webp", rating: 4.2, brand: "Tiffany & Co." },
     { id: 4, title: "Sony Portable Wireless Camera", price: 180, image: "/products/camera1.webp", hoverImage: "/products/camera2.webp", rating: 3.6, brand: "Sony" },
     { id: 5, title: "Fire Stylist Analog Watch Analog Watch", price: 90, image: "/products/watch1.webp", hoverImage: "/products/watch2.webp", rating: 4.1, brand: "Casio" },
-    { id: 6, title: "Laptop Backpack School Bag", price: 250, offer: 220, image: "/products/backpack2.webp", hoverImage: "/products/backpack2.webp", rating: 4.5, brand: "HP" },
+    { id: 6, title: "Laptop Backpack School Bag", price: 250, offer: 220, image: "/products/backpack1.webp", hoverImage: "/products/backpack2.webp", rating: 4.5, brand: "HP" },
     { id: 7, title: "Exclusive Design Office Chair Set", price: 120, offer: 98, image: "/products/chair1.webp", hoverImage: "/products/chair2.webp", rating: 5, brand: "IKEA" },
     { id: 8, title: "Sterling Gold Wedding Earring", price: 250, image: "/products/earings1.webp", hoverImage: "/products/earings2.webp", rating: 4.8, brand: "Tiffany & Co." },
     { id: 9, title: "Stainless Steel Wall Clock Wall Clock", price: 100, image: "/products/clock1.webp", hoverImage: "/products/clock2.webp", rating: 4.2, brand: "Sony" },
@@ -16,24 +16,24 @@ export const DUMMY_PROMO_DATA1 = [
         id: 1,
         title: "Stylish Watch",
         subtitle: "Elegant Watch",
-        price: 150.00,
-        image: "/products/watch3.webp",
+        price: "$150.00",
+        image: "/promo/watch3.webp",
         bgColor: "#F5C518",
     },
     {
         id: 2,
         title: "Fashion Deals",
         subtitle: "Biggest Deals",
-        price: 170.00,
-        image: "/products/shirt1.webp",
+        price: "$170.00",
+        image: "/promo/shirt1.webp",
         bgColor: "#D72638",
     },
     {
         id: 3,
         title: "Headphones Offer",
         subtitle: "Quality Headphones",
-        price: 100.00,
-        image: "/products/headphones1.webp",
+        price: "$100.00",
+        image: "/promo/headphones1.webp",
         bgColor: "#21BF73",
     },
 ];
@@ -41,32 +41,34 @@ export const DUMMY_PROMO_DATA1 = [
 export const DUMMY_PROMO_DATA2 = [
     {
         id: 1,
-        title: "New Florence Wrap Dress",
+        title: "New Zara cloths",
         subtitle: "SAVE UP TO 20% OFF",
-        price: null, // چون قیمت نداره
-        image: "/promo/dress.webp", // مسیر واقعی عکستو بزار
-        bgColor: "#D9B89B", // همون رنگ بژ پشت تصویر
+        price: "$85.00",
+        image: "/promo/mancloth.webp",
+        bgColor: "#ffba08", 
     },
     {
         id: 2,
-        title: "Huawei Nova Y70 Mobile",
+        title: "Smartphone Sale Event",
         subtitle: "SAVE UP TO 30% OFF",
-        price: null,
-        image: "/promo/huawei.webp",
-        bgColor: "#2E65B6", // رنگ آبی پشت زمینه
+        price: "$420.00",
+        image: "/promo/phone2.webp", // عکس گوشی جایگزین کن
+        bgColor: "#abc4ff", // آبی روشن
     },
 ];
+
 
 export const DUMMY_PROMO_DATA3 = [
     {
         id: 1,
-        title: "Luxury Leather Sofa",
-        subtitle: "Comfort Redefined",
-        price: "$250.00",
-        image: "/promo/sofa.webp", // مسیر عکستو بزار
-        bgColor: "#E2C4A6", // رنگ کرم-قهوه‌ای روشن مناسب مبل
+        title: "Modern Fabric Sofa",
+        subtitle: "Bring Comfort Home",
+        price: "$199.00",
+        image: "/promo/sofa2.webp",
+        bgColor: "#E2C4A6", // کرم مایل به قهوه‌ای روشن
     },
 ];
+
 
 
 
@@ -190,4 +192,110 @@ export const categoriesAll = [
     { image: "/categories/mobile.webp", title: "Mobile", productCount: 12 },
     { image: "/categories/otheraccessories.webp", title: "Other Accessories", productCount: 12 },
     { image: "/categories/outerwear.webp", title: "Outerwear", productCount: 12 },
+];
+
+export const Deals = [
+    {
+        id: 1,
+        title: "Minimalist Wooden Night Lamp",
+        price: 235,
+        offer: 200,
+        image: "/products/lamp1.webp",
+        hoverImage: "/products/lamp2.webp",
+        rating: 2.5,
+        brand: "IKEA",
+        dealEnd: "2026-12-10"
+    },
+    {
+        id: 2,
+        title: "Golden Elegant Necklace Set",
+        price: 140,
+        image: "/products/necklace1.webp",
+        hoverImage: "/products/necklace2.webp",
+        rating: 1.0,
+        brand: "ZARA",
+        dealEnd: "2026-11-20"
+    },
+    {
+        id: 3,
+        title: "Premium Sterling Gold Ring",
+        price: 120,
+        image: "/products/ring1.webp",
+        hoverImage: "/products/ring2.webp",
+        rating: 4.2,
+        brand: "Tiffany & Co.",
+        dealEnd: "2026-11-30"
+    },
+    {
+        id: 4,
+        title: "Sony Portable Digital Camera",
+        price: 180,
+        image: "/products/camera1.webp",
+        hoverImage: "/products/camera2.webp",
+        rating: 3.6,
+        brand: "Sony",
+        dealEnd: "2026-10-10"
+    },
+    {
+        id: 5,
+        title: "Fire Series Analog Wrist Watch",
+        price: 90,
+        image: "/products/watch1.webp",
+        hoverImage: "/products/watch2.webp",
+        rating: 4.1,
+        brand: "Casio",
+        dealEnd: "2026-12-25"
+    },
+    {
+        id: 6,
+        title: "Durable Laptop & School Backpack",
+        price: 250,
+        offer: 220,
+        image: "/products/backpack1.webp",
+        hoverImage: "/products/backpack2.webp",
+        rating: 4.5,
+        brand: "HP",
+        dealEnd: "2026-11-18"
+    },
+    {
+        id: 7,
+        title: "Modern Office Chair – Comfort Edition",
+        price: 120,
+        offer: 98,
+        image: "/products/chair1.webp",
+        hoverImage: "/products/chair2.webp",
+        rating: 5,
+        brand: "IKEA",
+        dealEnd: "2026-11-15"
+    },
+    {
+        id: 8,
+        title: "Classic Gold Wedding Earrings",
+        price: 250,
+        image: "/products/earings1.webp",
+        hoverImage: "/products/earings2.webp",
+        rating: 4.8,
+        brand: "Tiffany & Co.",
+        dealEnd: "2026-12-01"
+    },
+    {
+        id: 9,
+        title: "Stainless Steel Designer Wall Clock",
+        price: 100,
+        image: "/products/clock1.webp",
+        hoverImage: "/products/clock2.webp",
+        rating: 4.2,
+        brand: "Sony",
+        dealEnd: "2026-05-05" 
+    },
+    {
+        id: 10,
+        title: "Waterproof Outdoor Hiking Shoes",
+        price: 240,
+        image: "/products/shoes1.webp",
+        hoverImage: "/products/shoes2.webp",
+        rating: 2.8,
+        brand: "Adidas",
+        dealEnd: "2026-11-27"
+    },
 ];

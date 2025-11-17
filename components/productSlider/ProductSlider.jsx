@@ -15,6 +15,7 @@ import Cart from '@/public/icons/shopping-cart.svg'
 import RatingStars from '@/components/ui/RatingStars';
 import { formatUSD } from "@/utils/formatPrice";
 import Discount from "../ui/Discount";
+import DealTimer from "../ui/DealTimer";
 
 
 
@@ -34,10 +35,10 @@ export default function ProductSlider({ products }) {
                 }}
                 pagination={{ clickable: true }}
                 breakpoints={{
-                    320: { slidesPerView: 2, spaceBetween: 15 },
-                    640: { slidesPerView: 3, spaceBetween: 20 },
-                    1024: { slidesPerView: 4, spaceBetween: 30 },
-                    1280: { slidesPerView: 6, spaceBetween: 30 },
+                    320: { slidesPerView: 2,  },
+                    640: { slidesPerView: 3,  },
+                    1024: { slidesPerView: 4,  },
+                    1280: { slidesPerView: 6,  },
 
                 }}
                 className="product-swiper"
@@ -45,7 +46,7 @@ export default function ProductSlider({ products }) {
                 {products.map((item, index) => (
                     <SwiperSlide key={`${item.id || "no-id"}-${index}`} className="!h-auto mb-7">
                         <div className="group flex flex-col justify-between h-full p-5 cursor-pointer ">
-
+                        
                             {/* 🔹 بخش عکس */}
                             <div className="relative w-full h-[220px] mx-auto overflow-hidden rounded-md">
                                 <Image
@@ -61,6 +62,13 @@ export default function ProductSlider({ products }) {
                                     fill
                                     className="object-contain opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                                 />
+
+                                {/* Dealtimer here */}
+                                {item.dealEnd && (
+                                    <div className="absolute bottom-2 right-0 w-full flex px-1">
+                                        <DealTimer endDate={item.dealEnd} />
+                                    </div>
+                                )}
 
                                 {/* 🔹 دکمه‌های شناور سمت راست بالا */}
                                 <div className="absolute top-3 right-3 flex flex-col gap-2 opacity-0 -translate-y-10 transition-all duration-300 group-hover:opacity-100 group-hover:-translate-y-2">

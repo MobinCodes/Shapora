@@ -4,7 +4,6 @@ import ProductSlider from "./ProductSlider";
 
 const sliderMap = {
     "Shop By Categories": (data) => <CategorySlider categories={data} />,
-    "Featured Products": (data) => <ProductSlider products={data} />,
 };
 
 export default function ProductSliderWrapper({title , data}) {
