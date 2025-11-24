@@ -1,10 +1,10 @@
 import FreeShipping from "@/components/freeShipping/FreeShipping";
 import Hero from "@/components/home/Hero/Hero";
-import ProductSliderWrapper from "@/components/productSlider/productSliderWrapper";
-import ProductSliderWrapperColumn from "@/components/productSlider/ProductSliderWrapperColumn";
+import ProductSliderWrapper from "@/components/sliders/productSliderWrapper";
+import ProductSliderWrapperColumn from "@/components/sliders/ProductSliderWrapperColumn";
 import PromoContainer from "@/components/promo/PromoContainer.jsx";
 import StoreFeatures from "@/components/storeFeatures/StoreFeatures";
-import { categories, Deals, DUMMY_PROMO_DATA1, DUMMY_PROMO_DATA2, DUMMY_PROMO_DATA3, electronicsProducts, fashionProducts, featuredProducts, furnitureProducts, latestProducts } from "@/data/productData";
+import { bestSellingProducts, categories, Deals, DUMMY_PROMO_DATA1, DUMMY_PROMO_DATA2, DUMMY_PROMO_DATA3, electronicsProducts, fashionProducts, featuredProducts, furnitureProducts, latestProducts, testimonials } from "@/data/productData";
 
 export default function HomePage() {
   return (
@@ -28,6 +28,8 @@ export default function HomePage() {
             { title: "Electronics", data: electronicsProducts },
           ]}
         />
+        <ProductSliderWrapper title="Best Selling Products" data={bestSellingProducts} />
+        <ProductSliderWrapper title="What Our Clients Say" data={testimonials} />
       </main>
     </>
   );
