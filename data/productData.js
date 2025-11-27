@@ -511,7 +511,7 @@ export const blogPosts = [
         id: 1,
         title: "How AI Is Transforming E-Commerce in 2025",
         date: "May 2, 2025",
-        image: "/images/blog/",
+        image: "/blog/Transforming E-Commerce.webp",
         excerpt:
             "Artificial intelligence now personalizes shopping experiences, automates support, and increases conversion rates across all digital platforms.",
         link: "/blog/ai-transforming-ecommerce",
@@ -520,7 +520,7 @@ export const blogPosts = [
         id: 2,
         title: "Top 10 UI/UX Trends Every Designer Must Know",
         date: "May 4, 2025",
-        image: "/images/blog/uiux-trends.jpg",
+        image: "/blog/UIUX.webp",
         excerpt:
             "From glassmorphism to motion-based interfaces — discover the trends shaping modern design aesthetics this year.",
         link: "/blog/uiux-trends-2025",
@@ -529,7 +529,7 @@ export const blogPosts = [
         id: 3,
         title: "Why Next.js Became the #1 Framework for Startups",
         date: "May 5, 2025",
-        image: "/images/blog/nextjs-startups.jpg",
+        image: "/blog/Next.js.webp",
         excerpt:
             "SEO, server-side rendering, and developer-friendly architecture make Next.js the default choice for fast-growing companies.",
         link: "/blog/nextjs-for-startups",
@@ -538,7 +538,7 @@ export const blogPosts = [
         id: 4,
         title: "Building Scalable APIs: A Beginner Guide",
         date: "May 8, 2025",
-        image: "/images/blog/api-scalability.jpg",
+        image: "/blog/APIs.webp",
         excerpt:
             "Learn the core principles behind scalable API design — from caching layers to microservices and load balancing.",
         link: "/blog/building-scalable-api",
@@ -547,7 +547,7 @@ export const blogPosts = [
         id: 5,
         title: "Investing in Tech: 5 Trends to Watch in 2025",
         date: "May 10, 2025",
-        image: "/images/blog/tech-investment.jpg",
+        image: "/blog/Investing.webp",
         excerpt:
             "New markets are emerging in AI automation, robotics, biotech, and VR — here’s where the smartest founders put their money.",
         link: "/blog/tech-investing-2025",
@@ -556,9 +556,142 @@ export const blogPosts = [
         id: 6,
         title: "Freelancing as a Developer: How to Reach Your First $3K",
         date: "May 12, 2025",
-        image: "/images/blog/freelance-dev.jpg",
+        image: "/blog/Freelancing.webp",
         excerpt:
             "From portfolio building to client acquisition — a complete roadmap to becoming a profitable freelance developer.",
         link: "/blog/freelance-first-3k",
+    },
+];
+
+export const brands = [
+    
+    {
+        id: 1,
+        title: "brand1",
+        image: "/brands/brand1.webp",
+    },
+    {
+        id: 2,
+        title: "brand2",
+        image: "/brands/brand2.webp",
+    },
+    
+    {
+        id: 3,
+        title: "brand3",
+        image: "/brands/brand3.webp",
+    },
+    {
+        id: 4,
+        title: "brand4",
+        image: "/brands/brand4.webp",
+    },
+    {
+        id: 5,
+        title: "brand5",
+        image: "/brands/brand5.webp",
+    },
+    {
+        id: 6,
+        title: "brand6",
+        image: "/brands/brand6.webp",
+    },
+    {
+        id: 7,
+        title: "brand7",
+        image: "/brands/brand7.webp",
+    },
+];
+
+import Message from "@/public/icons/message-dots.svg";
+
+export const footerData = [
+    {
+        title: "Contact Us",
+        contents: [
+            {
+                html: (
+                    <div className="flex flex-col gap-y-3 text-gray-600 font-light">
+                        <p>
+                            some address some address some address some address
+                        </p>
+                        <span>someEmailAdress@gmail.com</span>
+                        <span className="text-red-600">+52 552 5587</span>
+
+                        <div className="flex items-center">
+                            <Message className="w-12 h-12 text-red-600" />
+                            <span>Online Chat Get Expert Help</span>
+                        </div>
+                    </div>
+                ),
+                items: null,
+            },
+        ],
+    },
+
+    {
+        title: "Quick Links",
+        contents: [
+            {
+                html: null,
+                items: [
+                    { label: "Home", href: "/" },
+                    { label: "Shop", href: "/shop" },
+                    { label: "About Us", href: "/about" },
+                    { label: "Contact Us", href: "/contact" },
+                    { label: "Privacy Policy", href: "/privacy" },
+                    { label: "Refund Policy", href: "/terms" },
+                ],
+            },
+        ],
+    },
+
+    {
+        title: "Information",
+        contents: [
+            {
+                html: null,
+                items: [
+                    { label: "Shipping Information", href: "/shipping" },
+                    { label: "Payment Methods", href: "/payment" },
+                    { label: "Support Center", href: "/support" },
+                    { label: "FAQs", href: "/faqs" },
+                    { label: "Terms & Conditions", href: "/terms" },
+                ],
+            },
+        ],
+    },
+
+    {
+        title: "Customer Service",
+        contents: [
+            {
+                html: null,
+                items: [
+                    { label: "Contact Us", href: "/contact" },
+                    { label: "Returns & Exchanges", href: "/returns" },
+                    { label: "Order Tracking", href: "/tracking" },
+                    { label: "Wishlist", href: "/wishlist" },
+                    { label: "My Account", href: "/account" },
+                ],
+            },
+        ],
+    },
+
+    {
+        title: "Find Product",
+        contents: [
+            {
+                html: null,
+                items: [
+                    { label: "Furniture", href: "/search/category" },
+                    { label: "Kids clothes", href: "/search/brand" },
+                    { label: "Mens outfits", href: "/search/price" },
+                    { label: "Smartphones", href: "/search/rating" },
+                    { label: "Wrist Watches", href: "/search/popularity" },
+                    { label: "Accessories", href: "/search/newarrivals" },
+                ],
+            },
+        ],
     },
 ];

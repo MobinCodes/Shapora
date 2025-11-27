@@ -39,7 +39,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${poppins.variable}`}>
-      <body className="bg-defaultBg">
+      <body className="bg-defaultBg pb-50">
         <ReduxProvider>
           <MainNavigation />
           <Sidebar />
