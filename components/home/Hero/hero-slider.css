@@ -1,0 +1,24 @@
+.hero-pagination {
+    position: absolute;
+    bottom: 20px; /* بیار بالا */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    z-index: 2;
+}
+
+.hero-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    opacity: 0.4;
+    background-color: rgb(112, 112, 112) !important;
+}
+
+.hero-pagination .swiper-pagination-bullet-active {
+    width: 11px;
+    height: 11px;
+    background: #e63946 !important; /* رنگ متفاوت */
+    opacity: 1;
+}

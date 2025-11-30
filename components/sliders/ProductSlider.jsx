@@ -45,9 +45,9 @@ export default function ProductSlider({ products }) {
             >
                 {products.map((item, index) => (
                     <SwiperSlide key={`${item.id || "no-id"}-${index}`} className="!h-auto mb-7">
-                        <div className="group flex flex-col justify-between h-full p-5 cursor-pointer ">
+                        <div className="group flex flex-col justify-between h-full sm:p-5 cursor-pointer ">
                         
-                            {/* 🔹 بخش عکس */}
+                            {/* image */}
                             <div className="relative w-full h-[220px] mx-auto overflow-hidden rounded-md">
                                 <Image
                                     src={item.image}

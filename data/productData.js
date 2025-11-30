@@ -611,16 +611,20 @@ export const footerData = [
         contents: [
             {
                 html: (
-                    <div className="flex flex-col gap-y-3 text-gray-600 font-light">
+                    <div className="flex flex-col gap-y-3 text-gray-600 font-light text-sm">
                         <p>
-                            some address some address some address some address
+                            Shapora Mega Store <br />
+                            some address <br /> some address
                         </p>
-                        <span>someEmailAdress@gmail.com</span>
-                        <span className="text-red-600">+52 552 5587</span>
+                        <p>
+                            
+                        </p>
+                        <span>emailAdress@gmail.com</span>
+                        <span className="text-red-600 text-base lg:text-lg">+52 552 5587</span>
 
-                        <div className="flex items-center">
+                        <div className="flex items-center gap-x-2">
                             <Message className="w-12 h-12 text-red-600" />
-                            <span>Online Chat Get Expert Help</span>
+                            <p className=" text-black text-lg font-normal">Online Chat <br /> Get Expert Help</p>
                         </div>
                     </div>
                 ),

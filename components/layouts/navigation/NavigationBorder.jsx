@@ -18,7 +18,7 @@ export default function NavigationBorder() {
 
     return (
         <>
-            {showBorder && <hr className="fixed top-[90px] w-full border-t border-gray-300 z-3" />}
+            {showBorder && <hr className="fixed top-[75px] w-full border-t border-gray-300 z-3" />}
         </>
     );
 }

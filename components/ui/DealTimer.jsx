@@ -50,7 +50,7 @@ export default function DealTimer({ endDate }) {
     }
 
     return (
-        <div className="bg-white shadow-sm rounded-md w-full text-red-500 text-sm flex justify-center py-1.5 gap-1">
+        <div className="bg-white shadow-sm rounded-md w-full text-red-500 text-xs sm:text-sm flex justify-center py-1.5 gap-1">
             <span>{timeLeft.days}D :</span>
             <span>{timeLeft.hours}H :</span>
             <span>{timeLeft.minutes}M :</span>

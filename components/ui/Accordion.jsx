@@ -15,14 +15,14 @@ export default function Accordion({ section }) {
             {/* Header */}
             <button
                 onClick={() => setOpen(!open)}
-                className="w-full pb-4 px-3 flex justify-between items-center text-left"
+                className="w-full pb-4 flex justify-between items-center text-left pe-5"
             >
                 <span className="font-medium ">{section.title}</span>
 
                 <motion.span
                     animate={{ rotate: open ? 180 : 0 }}
                     transition={{ duration: 0.2 }}
-                    className="pe-5"
+                    className=""
                 >
                     <Chevron className="w-5 h-5 " />
                 </motion.span>
@@ -32,16 +32,16 @@ export default function Accordion({ section }) {
             <AnimatePresence initial={false}>
                 {open && (
                     <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: "auto", opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
+                        initial={{ height: 0 }}
+                        animate={{ height: "auto" }}
+                        exit={{ height: 0 }}
                         transition={{ duration: 0.25 }}
-                        className="overflow-hidden px-3 pb-4"
+                        className="overflow-hidden pb-4"
                     >
                         {content.html && <div>{content.html}</div>}
 
                         {content.items && (
-                            <ul className="flex flex-col gap-y-2">
+                            <ul className="flex flex-col gap-y-3 text-gray-500 font-light text-sm">
                                 {content.items.map((item, i) => (
                                     <li key={i}>
                                         <Link

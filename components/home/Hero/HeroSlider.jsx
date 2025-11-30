@@ -7,6 +7,7 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import Button from '@/components/ui/Button';
+import './hero-slider.css'
 
 const slides = [
     {
@@ -33,21 +34,24 @@ export function HeroSlider() {
             <Swiper
                 centeredSlides
                 autoplay={{
-                    delay: 20000,
+                    delay: 5000,
                     disableOnInteraction: false,
                 }}
-                pagination={{ clickable: true }}
+                pagination={{
+                    clickable: true,
+                    el: '.hero-pagination',
+                }}
                 modules={[Autoplay, Pagination]}
                 className="h-full"
             >
                 {slides.map((slide) => (
                     <SwiperSlide key={slide.id}>
-                        <div className={`flex items-center justify-between w-full h-full px-10 md:px-16 lg:px-24 ${slide.bgColor}`}>
-                            <div className="flex flex-col justify-center gap-4 max-w-[450px]">
+                        <div className={`flex relative items-center justify-between w-full h-full px-10 md:px-16 lg:px-24 ${slide.bgColor}`}>
+                            <div className="flex flex-col justify-center gap-2 sm:gap-4 w-1/2 max-w-[450px] z-2">
                                 <p className="text-sm md:text-base lg:text-xl text-gray-800 tracking-wide uppercase">
                                     {slide.subtitle}
                                 </p>
-                                <h2 className="text-2xl md:text-4xl xl:text-5xl font-bold xl:font-bold leading-tight text-gray-900">
+                                <h2 className="text-xl md:text-4xl xl:text-5xl font-bold xl:font-bold leading-tight text-gray-900">
                                     {slide.title}
                                 </h2>
                                 <Button
@@ -58,7 +62,7 @@ export function HeroSlider() {
                                 </Button>
                             </div>
 
-                            <div className="flex justify-center items-center h-full relative w-[100%] md:w-[70%]">
+                            <div className="flex justify-center items-center h-full w-3/4 absolute -right-[15%] ">
                                 <Image
                                     src={slide.image}
                                     alt={slide.title}
@@ -71,6 +75,7 @@ export function HeroSlider() {
                         </div>
                     </SwiperSlide>
                 ))}
+            <div className="hero-pagination"></div>
             </Swiper>
         </div>
     );

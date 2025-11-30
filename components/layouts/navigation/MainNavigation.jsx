@@ -51,10 +51,10 @@ export default function MainNavigation() {
     return (
         <header className="w-full flex flex-col justify-center bg-white shadow-xs">
 
-            <div className="flex items-center px-5 lg:px-20 justify-between gap-x-5 w-full  h-[90px] mx-auto fixed top-0 left-1/2 -translate-x-1/2 bg-white z-4 shadow-here  ">
+            <div className="flex items-center px-5 lg:px-20 justify-between gap-x-5 w-full h-[75px] mx-auto fixed top-0 left-1/2 -translate-x-1/2 bg-white z-4 shadow-here  ">
 
                 <Link href="/" >
-                    <div className="relative w-[120px] md:w-[170px] h-[90px] flex justify-center items-center">
+                    <div className="relative w-[150px] md:w-[170px] h-[90px] flex justify-center items-center">
                         <Image
                             src="/shapora-logo.png"
                             alt="Shapora logo"
@@ -118,8 +118,8 @@ export default function MainNavigation() {
 
             <NavigationBorder />
 
-            <div className="mt-[90px] flex flex-col md:flex-row md:justify-between px-5 py-2 lg:py-0 lg:px-15 gap-x-5 gap-y-5 max-w-[1460px] border-b border-b-neutral-100">
-                {/* this form right here */}
+            <div className="mt-[75px] flex flex-col md:flex-row md:justify-between px-5 py-2 lg:py-0 lg:px-15 gap-x-5 gap-y-5 max-w-[1460px] border-b border-b-neutral-100">
+
                 <form className="flex md:hidden gap-x-3 justify-center">
                     <input
                         className="border border-gray-300 outline-0 rounded-md px-5 min-w-0 grow"

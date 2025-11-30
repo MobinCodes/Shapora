@@ -5,12 +5,12 @@ export default function PromoCard({ title, subtitle, price, image, bgColor, data
 
     const styles = {
         1: {
-            wrapper: "p-8 xl:h-[350px] h-[200px]",
-            title: "text-2xl sm:text-3xl xl:text-5xl",
+            wrapper: "p-8 xl:h-[350px] h-[250px]",
+            title: "text-xl sm:text-2xl xl:text-5xl",
             subtitle: "text-2xl xl:text-3xl",
             price: "text-lg xl:text-xl",
             textColor: "text-white",
-            imagePos: "absolute -right-30 md:-right-50 xl:-right-80 bottom-0",
+            imagePos: "absolute -right-35 md:-right-50 xl:-right-80 bottom-0",
             imageClass: "object-contain lg:scale-125",
         },
         2: {
@@ -19,8 +19,8 @@ export default function PromoCard({ title, subtitle, price, image, bgColor, data
             subtitle: "text-xl",
             price: "text-lg",
             textColor: "text-black",
-            imagePos: "absolute -right-30 sm:-right-50 md:-right-30 lg:-right-45 bottom-0",
-            imageClass: "object-contain scale-125 md:scale-100 xl:scale-120",
+            imagePos: "absolute -right-35 sm:-right-50 md:-right-35 lg:-right-45 bottom-0",
+            imageClass: "object-contain scale-100 md:scale-100 xl:scale-110",
         },
         3: {
             wrapper: "p-8 max-w-[450px] md:max-w-[700px] h-[250px] md:h-[300px] lg:h-[250px]",
@@ -38,7 +38,7 @@ export default function PromoCard({ title, subtitle, price, image, bgColor, data
             className={`group relative flex items-center justify-between rounded-lg overflow-hidden w-full ${styles.wrapper}`}
             style={{ backgroundColor: bgColor }}
         >
-            <div className={`z-2 ${styles.textColor} space-y-2`}>
+            <div className={`z-2 w-3/4 ${styles.textColor} space-y-2`}>
                 <h2 className={styles.title}>{title}</h2>
                 <p className={styles.subtitle}>{subtitle}</p>
                 {price && <p className={styles.price}>{price}</p>}
