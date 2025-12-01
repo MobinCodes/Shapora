@@ -1,5 +1,5 @@
 import FreeShipping from "@/components/freeShipping/FreeShipping";
-import Hero from "@/components/home/Hero/Hero";
+import Hero from "@/components/hero/home/Hero";
 import ProductSliderWrapper from "@/components/sliders/productSliderWrapper";
 import ProductSliderWrapperColumn from "@/components/sliders/ProductSliderWrapperColumn";
 import PromoContainer from "@/components/promo/PromoContainer.jsx";

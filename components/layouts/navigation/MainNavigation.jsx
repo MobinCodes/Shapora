@@ -51,7 +51,7 @@ export default function MainNavigation() {
     return (
         <header className="w-full flex flex-col justify-center bg-white shadow-xs">
 
-            <div className="flex items-center px-5 lg:px-20 justify-between gap-x-5 w-full h-[75px] mx-auto fixed top-0 left-1/2 -translate-x-1/2 bg-white z-4 shadow-here  ">
+            <div className="flex items-center px-4 lg:px-20 justify-between gap-x-5 w-full h-[75px] mx-auto fixed top-0 left-1/2 -translate-x-1/2 bg-white z-4 shadow-here  ">
 
                 <Link href="/" >
                     <div className="relative w-[150px] md:w-[170px] h-[90px] flex justify-center items-center">
@@ -60,7 +60,7 @@ export default function MainNavigation() {
                             alt="Shapora logo"
                             fill
                             sizes="1300px"
-                            className="object-contain"
+                            className="object-contain scale-110"
                             priority
                         />
                     </div>
@@ -118,7 +118,7 @@ export default function MainNavigation() {
 
             <NavigationBorder />
 
-            <div className="mt-[75px] flex flex-col md:flex-row md:justify-between px-5 py-2 lg:py-0 lg:px-15 gap-x-5 gap-y-5 max-w-[1460px] border-b border-b-neutral-100">
+            <div className="mt-[75px] flex flex-col md:flex-row md:justify-between px-4 pb-2 lg:py-0 lg:px-15 gap-x-5 gap-y-5 max-w-[1460px] border-b border-b-neutral-100">
 
                 <form className="flex md:hidden gap-x-3 justify-center">
                     <input
@@ -138,9 +138,11 @@ export default function MainNavigation() {
                 <div className="hidden lg:flex items-center gap-x-12 ">
                     <CategoryDropdown />
 
-                    <Link href="/home" className="hover:text-red-600 transition-all">Home</Link>
+                    <Link href="/" className="hover:text-red-600 transition-all">Home</Link>
 
-                    <NavMegaDropdown title="Shop" columns={shopMenu} />
+                    <Link href='/shop'>
+                        <NavMegaDropdown title="Shop" columns={shopMenu} />
+                    </Link>
 
                     <Link href="/home" className="hover:text-red-600 transition-all">Home</Link>
 

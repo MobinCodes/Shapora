@@ -1,10 +1,10 @@
 import Link from "next/link";
+
 import Accordion from "../ui/Accordion";
 import { footerData } from "@/data/productData";
-
 export default function Footer() {
     return (
-        <section className="w-full max-w-[1400px] mx-auto mt-10 px-3.5 sm:px-5 xl:px-0">
+        <section className="w-full max-w-[1400px] mx-auto mt-10 px-3.5 sm:px-5 xl:px-0 flex flex-col">
 
             {/* ------ Mobile ------ */}
             <div className="flex flex-col lg:hidden">
@@ -48,6 +48,8 @@ export default function Footer() {
                 ))}
 
             </div>
+
+            
         </section>
     );
 }

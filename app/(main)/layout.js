@@ -4,6 +4,7 @@ import MainNavigation from "@/components/layouts/navigation/MainNavigation";
 import Footer from "@/components/layouts/Footer";
 import Sidebar from "@/components/layouts/Sidebar";
 import ReduxProvider from "@/redux/reduxProvider";
+import MiniFooter from "@/components/layouts/MiniFooter";
 
 const poppins = localFont({
   src: [
@@ -39,12 +40,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${poppins.variable}`}>
-      <body className="bg-defaultBg pb-50">
+      <body className="bg-defaultBg">
         <ReduxProvider>
           <MainNavigation />
           <Sidebar />
           {children}
           <Footer />
+          <MiniFooter /> 
         </ReduxProvider>
       </body>
     </html>
