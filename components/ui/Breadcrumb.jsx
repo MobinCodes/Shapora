@@ -8,12 +8,12 @@ export default function Breadcrumb() {
     const pathnames = pathname.split("/").filter((x) => x);
 
     return (
-        <div className="bg-blue-600 py-4 px-6 flex justify-center items-center">
-            <div className="max-w-[1100px] w-full flex justify-start">
+        <div className="mt-2 flex justify-center items-center">
+            <div className="max-w-[1100px] w-full flex justify-start text-sm">
 
                 <Link
                     href="/"
-                    className="text-white border-b-2 border-b-transparent hover:border-b-white transition-all duration-300"
+                    className="text-gray-500 border-b-2 border-b-transparent hover:border-b-white transition-all duration-300"
                 >
                     Home
                 </Link>
@@ -24,10 +24,10 @@ export default function Breadcrumb() {
 
                     return (
                         <span key={name} className="flex items-center">
-                            <span className="text-gray-200 mx-2">/</span>
+                            <span className="text-gray-500 mx-2">/</span>
 
                             {isLast ? (
-                                <span className="text-gray-300 capitalize">{name}</span>
+                                <span className="text-gray-400 capitalize">{name}</span>
                             ) : (
                                 <Link href={routeTo} className="text-white capitalize">
                                     {name}

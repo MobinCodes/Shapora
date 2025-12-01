@@ -1,5 +1,5 @@
 export const latestProducts = [
-    { id: 1, title: "Home Decorative Wood Night Lamp ", price: 235, offer: 200, image: "/products/lamp1.webp", hoverImage: "/products/lamp2.webp", rating: 2.5, brand: "IKEA" },
+    { id: 1, title: "Home Decorative Wood Night Lamp ", price: 235, offer: 200, image: "/products/lamp1.webp", hoverImage: "/products/lamp2.webp", rating: 2.5, brand: "IKEA" , description : '' , dealEnd :'' , count: '' , category: '' ,  },
     { id: 2, title: "Original Golden Necklace Set", price: 140, image: "/products/necklace1.webp", hoverImage: "/products/necklace2.webp", rating: 1.0, brand: "ZARA" },
     { id: 3, title: "Engagement Sterling Gold Style Ring", price: 120, image: "/products/ring1.webp", hoverImage: "/products/ring2.webp", rating: 4.2, brand: "Tiffany & Co." },
     { id: 4, title: "Sony Portable Wireless Camera", price: 180, image: "/products/camera1.webp", hoverImage: "/products/camera2.webp", rating: 3.6, brand: "Sony" },
@@ -57,7 +57,6 @@ export const DUMMY_PROMO_DATA2 = [
     },
 ];
 
-
 export const DUMMY_PROMO_DATA3 = [
     {
         id: 1,
@@ -68,9 +67,6 @@ export const DUMMY_PROMO_DATA3 = [
         bgColor: "#E2C4A6", // کرم مایل به قهوه‌ای روشن
     },
 ];
-
-
-
 
 export const featuredProducts = [
     {
@@ -148,8 +144,6 @@ export const featuredProducts = [
     { id: 6, title: "Laptop Backpack School Bag", price: 250, offer: 220, image: "/products/backpack2.webp", hoverImage: "/products/backpack2.webp", rating: 4.5, brand: "HP" },
     { id: 7, title: "Exclusive Design Office Chair Set", price: 120, offer: 98, image: "/products/chair1.webp", hoverImage: "/products/chair2.webp", rating: 5, brand: "IKEA" },
 ];
-
-
 
 export const categories = [
     { image: "/categories/accesories.webp", title: "Accessories", productCount: 12 },

@@ -3,19 +3,27 @@
 import { useEffect, useState } from "react";
 import Menu from "@/public/icons/menu-2.svg";
 import ChevronDown from "@/public/icons/chevron-down.svg";
-import { AnimatePresence , motion} from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { categoryDropdownAnimation } from "@/utils/motionVariants";
 import Link from "next/link";
 import { useIsPc } from "@/hooks/useIsPc";
-
+import { usePathname } from "next/navigation";
 
 export default function CategoryDropdown() {
     const isPc = useIsPc();
-    const [isOpen, setIsOpen] = useState(isPc && false);
+    const pathname = usePathname();
+    const isHome = pathname === "/";
+
+    const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
-        setIsOpen(isPc); // یعنی وقتی بالای 1440 شد → باز باشه، پایین‌تر → بسته
-    }, [isPc]);
+        // وقتی PC هستیم و روی صفحه Home هستیم → باز باشد
+        if (isPc && isHome) {
+            setIsOpen(true);
+        } else {
+            setIsOpen(false);
+        }
+    }, [isPc, isHome]);
 
     const categories = [
         "Electronics",
@@ -25,7 +33,7 @@ export default function CategoryDropdown() {
         "Sports",
         "Toys",
         "Cabinet Table",
-        "Furniture", 
+        "Furniture",
         "Headphones",
         "Leahther Watch",
         "Sunglasses"
@@ -34,7 +42,7 @@ export default function CategoryDropdown() {
     return (
         <div className="relative">
             <button
-                onClick={() => setIsOpen((prev) => !prev)}
+                onClick={() => setIsOpen(prev => !prev)}
                 className="text-white gap-x-4 flex items-center bg-primary px-5 py-2 rounded-tr-md rounded-tl-md cursor-pointer"
             >
                 <Menu className="h-7 w-7 lg:h-6 md:w-6" />
@@ -49,19 +57,20 @@ export default function CategoryDropdown() {
                 {isOpen && (
                     <motion.div
                         variants={categoryDropdownAnimation}
-                        initial='init'
-                        animate='anim'
-                        exit='init'
-                        className="absolute top-18 left-0 w-[260px] bg-white rounded-md z-2 overflow-hidden shadow-xs">
+                        initial="init"
+                        animate="anim"
+                        exit="init"
+                        className="absolute top-18 left-0 w-[260px] bg-white rounded-md z-2 overflow-hidden shadow-xs"
+                    >
                         <ul className="flex flex-col py-4">
                             {categories.map((item, i) => (
                                 <li
                                     key={i}
                                     className="px-5 py-3 text-sm text-gray-700 hover:text-red-600 cursor-pointer transition-all"
                                 >
-                                <Link href="#">
-                                    {item}
-                                </Link>
+                                    <Link href="#">
+                                        {item}
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
