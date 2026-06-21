@@ -1,6 +1,6 @@
 
 import StarFull from '@/public/icons/star-full.svg'
-import Star from '@/public/icons/Star.svg'
+import Star from '@/public/icons/star.svg'
 import StarHalf from '@/public/icons/star-half.svg'
 
 
