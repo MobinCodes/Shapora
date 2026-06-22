@@ -33,8 +33,11 @@ const poppins = localFont({
 });
 
 export const metadata = {
-  title: "Your App",
+  title: "Shapora",
   description: "Next.js professional structure",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({ children }) {
